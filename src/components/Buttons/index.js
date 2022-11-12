@@ -1,7 +1,9 @@
 import React from 'react'
 import { buttons } from '../../constants/buttons';
+import { useCalculator } from '../../context/calculator';
 
-const Buttons = ({ onInputValues, clear, calculate }) => {
+const Buttons = () => {
+    const { onInputValues, calculate, clear } = useCalculator();
 
     const handleClick = (button) => {
         if (button.type === 'number' || button.type === 'operator') {

@@ -2,6 +2,11 @@ body {
     background: #222;
     font-family: sans-serif;
     color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -14,7 +19,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 300px;
-    border-top: 1px solid #fff;
+    margin-bottom: 30px;
 }
 
 .calculator-buttons button {
@@ -41,4 +46,8 @@ h1 {
 
 .calculator-buttons button:active {
     background: rgb(58, 150, 30);
+}
+
+.result {
+    text-align: center;
 }
