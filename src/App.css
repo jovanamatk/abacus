@@ -1,0 +1,44 @@
+body {
+    background: #222;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    border-top: 1px solid #fff;
+}
+
+.calculator-buttons button {
+    padding: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgb(84, 214, 44);
+    border: none;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    flex: 0 1 25%;
+    cursor: pointer;
+}
+
+.calculator-buttons button:nth-child(3n),
+.calculator-buttons button:last-child {
+        border-right: 1px solid #fff;
+}
+
+.calculator-buttons.calculator-buttons--no-bottom-border button {
+    border-bottom: none;
+}
+
+.calculator-buttons button:active {
+    background: rgb(58, 150, 30);
+}
